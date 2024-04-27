@@ -1,0 +1,21 @@
+{
+  "name": "ai-bytes-three-way-match",
+  "mastertemplate": "ai-bytes-three-way-match",
+  "version": "2stable.0.1",
+  "description": "SmartSwipe.ai - by Team AI Bytes",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hvibhand/AI-Bytes-Smart-Swipe"
+  },
+  "bugs": {
+    "url": "https://github.com/hvibhand/AI-Bytes-Smart-Swipe/issues",
+    "email": "harshal.vibhandik@capgemini.com"
+  },
+  "author": "Harshal Vibhandik <harshal.vibhandik@capgemini.com> (http://127.0.0.1:5085/)",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

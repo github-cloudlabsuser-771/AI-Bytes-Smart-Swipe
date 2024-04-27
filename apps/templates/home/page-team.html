@@ -1,0 +1,212 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} User Profile {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<!-- ============================================================== -->
+<!-- Bread crumb and right sidebar toggle -->
+<!-- ============================================================== -->
+<div class="page-breadcrumb">
+    <div class="row align-items-center">
+        <div class="col-md-6 col-8 align-self-center">
+            <h3 class="page-title mb-0 p-0">Dev Team</h3>
+            <div class="d-flex align-items-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Dev Team</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="col-md-6 col-4 align-self-center">
+            <div class="text-end upgrade-btn">
+                <a href="{% url 'logout' %}" class="btn btn-danger d-none d-md-inline-block text-white">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- End Bread crumb and right sidebar toggle -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- Container fluid  -->
+<!-- ============================================================== -->
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <!-- Row -->
+    <div class="row">
+        <!-- Column -->
+        <div class="col-lg-4 col-xlg-3">
+            <!-- Column -->
+            <div class="card">
+                <div class="card-body bg-info">
+                    <h4 class="text-white card-title">Team Members</h4>
+                    <h6 class="card-subtitle text-white mb-0 op-5">from Capgemini - Pune, INDIA</h6>
+                </div>
+                <div class="card-body">
+                    <div class="message-box contact-box">
+                        <div class="message-widget contact-widget">
+                            <!-- Team Member 1 -->
+                            <a href="https://www.linkedin.com/in/hardik-budhiraja/"
+                               class="d-flex align-items-center" target="_blank">
+                                <div class="user-img mb-0">
+                                    <img src="{{ ASSETS_ROOT }}/images/users/hardik.jpg" alt="user"
+                                         class="img-circle">
+                                </div>
+                                <div class="mail-contnet">
+                                    <h5 class="mb-0">Hardik Budhiraja</h5> <span
+                                        class="mail-desc">hardik.budhiraja@capgemini.com</span>
+                                </div>
+                            </a>
+                            <!-- Team Member 2 -->
+                            <a href="https://www.linkedin.com/in/mahesh-akiwate/"
+                               class="d-flex align-items-center" target="_blank">
+                                <div class="user-img mb-0">
+                                    <img src="{{ ASSETS_ROOT }}/images/users/mahesh.jpg" alt="user" class="img-circle">
+                                </div>
+                                <div class="mail-contnet">
+                                    <h5 class="mb-0">Mahesh Akiwate</h5> <span
+                                        class="mail-desc">mahesh.akiwate@capgemini.com</span>
+                                </div>
+                            </a>
+                            <!-- Team Member 3 -->
+                            <a href="https://www.linkedin.com/in/harshal-vibhandik-84822568/"
+                               class="d-flex align-items-center" target="_blank">
+                                <div class="user-img mb-0">
+                                    <img src="{{ ASSETS_ROOT }}/images/users/harshal.jpg" alt="user" class="img-circle">
+                                </div>
+                                <div class="mail-contnet">
+                                    <h5 class="mb-0">Harshal Vibhandik</h5> <span
+                                        class="mail-desc">harshal.vibhandik@capgemini.com</span>
+                                </div>
+                            </a>
+                            <!-- Team Member 4 -->
+                            <a href="https://www.linkedin.com/in/kiran-mote-8212011a8/"
+                               class="d-flex align-items-center" target="_blank">
+                                <div class="user-img mb-0">
+                                    <img src="{{ ASSETS_ROOT }}/images/users/kiran.jpg" alt="user"
+                                         class="img-circle">
+                                </div>
+                                <div class="mail-contnet">
+                                    <h5 class="mb-0">Kiran Mote</h5> <span
+                                        class="mail-desc">kiran.dadasaheb-mote@capgemini.com</span>
+                                </div>
+                            </a>
+                            <!-- Team Member 5 -->
+                            <a href="https://www.linkedin.com/in/pratiksha-jamaiwar-immediate-joiner-ba0727156/"
+                               class="d-flex align-items-center" target="_blank">
+                                <div class="user-img mb-0">
+                                    <img src="{{ ASSETS_ROOT }}/images/users/pratiksha.jpg" alt="user"
+                                         class="img-circle">
+                                </div>
+                                <div class="mail-contnet">
+                                    <h5 class="mb-0">Pratiksha Jamaiwar</h5> <span
+                                        class="mail-desc">pratiksha.jamaiwar@capgemini.com</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-xlg-9">
+            <div class="card">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs profile-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#profile" role="tab">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#activity" role="tab">Activity</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="profile" role="tabpanel">
+                        <div class="card-body">
+                            <p>
+                                <b>Hardik Budhiraja - </b>Senior Manager at Capgemini and working as a Banking SME -
+                                Leading the way with an arsenal of new technologies, India BA Community Lead -
+                                Passionate to drive the initiative, Climate Fresk Facilitator - With a keen environment
+                                positive view, Storytelling in Business Facilitator.
+                            </p>
+                            <p>
+                                <b>Mahesh Akiwate - </b>Over 15+ years of experience in Cloud (Azure and AWS), Web, PWA
+                                and Mobile technologies) within the domain of Banking, Capital Market, and Insurance.
+                                Worked in various roles such as Cloud Solution Architect, Solution and Technical
+                                Architect, ScrumMaster, Project Lead, and Application Developer.
+                            </p>
+                            <p>
+                                <b>Harshal Vibhandik - </b>Over 11+ years of experience in IT Industry | Android Tech
+                                Lead at HSBC Bank | Mobile Architect | Android Enthusiast | Kotlin | Java | JetPack |
+                                Github | Jenkins CICD | SonarQube | SAFe | Agile | Python for DS, ML & AI.
+                            </p>
+                            <p>
+                                <b>Kiran Mote - </b>Over 5+ years of experience in Software development and worked with
+                                Python, Deep Learning, Numpy, Pandas, C & C++ etc.
+                            </p>
+                            <p>
+                                <b>Pratiksha Jamaiwar - </b>Strong foundation in programming languages such as Python
+                                and R, I am excited about exploring data-driven insights and building predictive models.
+                                My work with statistical analysis and machine learning techniques to extract valuable
+                                information from complex datasets.
+                            </p>
+                        </div>
+                    </div>
+                    <!--second tab-->
+                    <div class="tab-pane" id="activity" role="tabpanel">
+                        <div class="card-body">
+                            <p>Donec quis dignissim nisi. Nam cursus fringilla interdum. Morbi hendrerit, quam et tempus
+                                finibus, lectus quam volutpat nisi, sit amet porttitor ipsum enim ac tortor. Aenean
+                                convallis mattis augue eget suscipit. Aliquam in auctor libero, et laoreet diam. Sed ex
+                                enim, varius id tincidunt imperdiet, scelerisque at neque. Proin at imperdiet mauris,
+                                eget cursus leo. Vivamus a erat cursus, auctor magna at, lacinia orci. Aenean tempor
+                                tempor sagittis. Aliquam erat volutpat. Nunc a bibendum nisl, vitae porta eros.</p>
+                            <p>Cras at risus in felis pretium mattis. Suspendisse eu ex malesuada, dignissim libero
+                                vitae, pellentesque nisl. Phasellus at ex turpis. Praesent eget ex imperdiet, fringilla
+                                ipsum vel, feugiat magna. Cras a lectus est. In blandit diam nec felis blandit, sed
+                                scelerisque orci convallis. Phasellus faucibus purus purus, id semper arcu viverra non.
+                                Nulla vitae libero tellus. Curabitur rutrum elit eros, at pellentesque quam tempus ut.
+                                Maecenas id vehicula nisl. In facilisis magna erat, in tincidunt est bibendum a.</p>
+                            <p>Cras viverra fringilla purus, in pulvinar mauris fermentum laoreet. Quisque sagittis,
+                                neque non scelerisque viverra, diam ligula vulputate eros, vel consequat massa massa sed
+                                leo. Phasellus sed tincidunt lacus, quis euismod metus. Sed placerat interdum tristique.
+                                Suspendisse faucibus augue bibendum dolor mollis, eu iaculis dolor porttitor. Morbi
+                                pharetra elit et orci volutpat venenatis. Proin et maximus augue, et tempor tellus. Nam
+                                commodo felis at purus ullamcorper, et aliquet urna luctus. Ut sagittis nisi enim, sed
+                                tristique velit finibus nec. Pellentesque nec sagittis orci.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Table -->
+    <!-- ============================================================== -->
+    <!-- Row -->
+    <!-- ============================================================== -->
+    <!-- End PAge Content -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Right sidebar -->
+    <!-- ============================================================== -->
+    <!-- .right-sidebar -->
+    <!-- ============================================================== -->
+    <!-- End Right sidebar -->
+    <!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- End Container fluid  -->
+<!-- ============================================================== -->
+
+{% endblock content %}
+
+{% block javascripts %}{% endblock javascripts %}
