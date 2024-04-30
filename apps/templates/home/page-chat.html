@@ -1,0 +1,105 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Page Blank {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<!-- ============================================================== -->
+<!-- Bread crumb and right sidebar toggle -->
+<!-- ============================================================== -->
+<div class="page-breadcrumb">
+    <div class="row align-items-center">
+        <div class="col-md-6 col-8 align-self-center">
+            <h3 class="page-title mb-0 p-0">Chat with AI-Bot</h3>
+            <div class="d-flex align-items-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Chat with AI-Bot</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="col-md-6 col-4 align-self-center">
+            <div class="text-end upgrade-btn">
+                <div class="text-end upgrade-btn">
+                    <a href="{% url 'logout' %}" class="btn btn-danger d-none d-md-inline-block text-white">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- End Bread crumb and right sidebar toggle -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- Container fluid  -->
+<!-- ============================================================== -->
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center">Hi {{request.user.username}} 👋 - Let's Talk! 🤖</h2>
+            <br/>
+            <h3 class="text-center">This Chatbot is well matured to suggest most advantageous credit cards to swipe</h3>
+            <ol class="list-group mt-5">
+                {% for history in get_history %}
+                <li class="list-group-item rounded d-flex justify-content-between align-items-start p-2 mb-3"
+                    style="background-color: white; color:#303030">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">You ({{history.user.username}})</div>
+                        {{history.messageInput}}
+                    </div>
+                </li>
+                <li class="list-group-item rounded d-flex justify-content-between align-items-start p-2 mb-3"
+                    style="background-color: #6E00FF;color:white">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">AI-Bot</div>
+                        {{history.bot_response}}
+                    </div>
+                </li>
+                {% endfor %}
+            </ol>
+            <form action="" method="post" class="mt-3">
+                {% csrf_token %}
+                <label for="exampleFormControlTextarea1" class="form-label">Enter your prompt</label>
+                <div class="d-flex mb-3 gap-2">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                      placeholder="How can i help you?"
+                                      name="userInput"></textarea>
+                    <button class="btn btn-dark btn-lg" type="submit" id="btn" style="width: 80px;"><i
+                            class="mdi mdi-send"></i></button>
+                </div>
+                <div class="d-flex justify-content-center m-3 align-items-center gap-3">
+                    {% if get_history %}
+                    <div class="text-end upgrade-btn">
+                        <a href="{% url 'deleteChat' %}" class="btn btn-danger d-none d-md-inline-block text-white">Clear Chat</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End PAge Content -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Right sidebar -->
+    <!-- ============================================================== -->
+    <!-- .right-sidebar -->
+    <!-- ============================================================== -->
+    <!-- End Right sidebar -->
+    <!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- End Container fluid  -->
+<!-- ============================================================== -->
+
+{% endblock content %}
+
+{% block javascripts %}{% endblock javascripts %}

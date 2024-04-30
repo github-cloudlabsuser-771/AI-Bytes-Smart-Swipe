@@ -12,8 +12,11 @@ urlpatterns = [
     # Path to Home (Invoices also loaded on the same page)
     path('', views.index, name='home'),
 
+    # Path to Delete Chats
+    path("delete/", views.delete_history, name='deleteChat'),
+
     # Path to Invoice Details
-    path('invoice/<detail_id>', views.invoice_details, name='invoice_details'),
+    # path('invoice/<detail_id>', views.invoice_details, name='invoice_details'),
 
     # Path with regex to match other all pages
     re_path(r'^.*\.*', views.pages, name='pages'),
