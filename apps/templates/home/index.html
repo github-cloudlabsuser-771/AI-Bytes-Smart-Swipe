@@ -455,16 +455,22 @@
 
 {% block javascripts %}
 
-<!-- ============================================================== -->
-<!-- This page plugins -->
-<!-- ============================================================== -->
-<!-- chartist chart -->
-<script src="{{ ASSETS_ROOT }}/plugins/chartist-js/dist/chartist.min.js"></script>
-<script src="{{ ASSETS_ROOT }}/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
-<!--c3 JavaScript -->
-<script src="{{ ASSETS_ROOT }}/plugins/d3/d3.min.js"></script>
-<script src="{{ ASSETS_ROOT }}/plugins/c3-master/c3.min.js"></script>
-<!--Custom JavaScript -->
-<script src="{{ ASSETS_ROOT }}/js/pages/dashboards/dashboard1.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!-- chartist chart -->
+    <script src="{{ ASSETS_ROOT }}/plugins/chartist-js/dist/chartist.min.js"></script>
+    <script src="{{ ASSETS_ROOT }}/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <!--c3 JavaScript -->
+    <script src="{{ ASSETS_ROOT }}/plugins/d3/d3.min.js"></script>
+    <script src="{{ ASSETS_ROOT }}/plugins/c3-master/c3.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="{{ ASSETS_ROOT }}/js/pages/dashboards/dashboard1.js"></script>
 
+    <!-- ============================================================== -->
+    <!-- This page plugin js -->
+    <!-- ============================================================== -->
+    <script>
+        $(".preloader").fadeOut();
+    </script>
 {% endblock javascripts %}    

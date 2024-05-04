@@ -14,4 +14,49 @@ In the financial industry, numerous credit cards offer various plans and rewards
 - Explore potential integrations with emerging technologies like smart wearables or AR/VR interfaces.
 - Implement a feedback mechanism for users to provide input on recommendations and app functionality, facilitating continuous improvement.
 
+## How to build and run the SmartSwipe.ai Django WebApp?
+
+### GitHub and Local Environment
+1. Clone the repo from GitHub
+`git clone https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe.git`
+2. Setup your Azure API Secrets in OS environment variables
+`OPENAI_API_KEY` and `SEARCH_KEY`
+
+### Development Environment (`PyCharm` OR `VS Code`)
+1. Go to the repo directory path and setup `venv`
+`python -m venv venv`
+2. Activate the `venv` on terminal
+`source venv/bin/activate`
+3. Install all required dependencies for project
+`pip install -r requirements.txt`
+4. Do the migration to update Django database schema
+`python manage.py makemigrations`
+5. Confirm the migration
+`python manage.py migrate`
+6. Create superuser for Admin access
+`python manage.py createsuperuser`
+7. Run the project on localhost
+`python manage.py runserver`                            // This will run on http://127.0.0.1:8000/
+
+
+### Screens:
+1. Login
+<img width="1440" alt="Screenshot 2024-05-04 at 6 03 52 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/adf53696-f44b-40ce-a8b6-dec78b656a1e">
+
+2. Register
+<img width="1440" alt="Screenshot 2024-05-04 at 6 04 03 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/1731c43c-6b76-4e3d-a7c9-d033a8cf494c">
+
+3. Chat Dashboard
+<img width="1440" alt="Screenshot 2024-05-04 at 6 04 15 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/08e39856-39df-4178-80b2-11170a346154">
+
+4. AI-Bot response
+<img width="1440" alt="Screenshot 2024-05-04 at 6 04 30 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/ab36d851-9e40-4a34-9303-c0970d64d7d9">
+
+5. Profile
+<img width="1440" alt="Screenshot 2024-05-04 at 6 04 55 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/f50f678f-56bd-4967-bf28-c5ec7f452ab4">
+
+6. Dev Team
+<img width="1440" alt="Screenshot 2024-05-04 at 6 05 15 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/744f67ab-fe50-4cfb-a83b-f9c41665afec">
+
+
 Developed by - **Team AI Bytes** from Capgemini Pune, INDIA.
