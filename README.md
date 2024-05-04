@@ -39,4 +39,24 @@ In the financial industry, numerous credit cards offer various plans and rewards
 `python manage.py runserver`                            // This will run on http://127.0.0.1:8000/
 
 
+### Screens:
+1. Login
+<img width="1440" alt="Screenshot 2024-05-04 at 6 03 52 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/adf53696-f44b-40ce-a8b6-dec78b656a1e">
+
+2. Register
+<img width="1440" alt="Screenshot 2024-05-04 at 6 04 03 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/1731c43c-6b76-4e3d-a7c9-d033a8cf494c">
+
+3. Chat Dashboard
+<img width="1440" alt="Screenshot 2024-05-04 at 6 04 15 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/08e39856-39df-4178-80b2-11170a346154">
+
+4. AI-Bot response
+<img width="1440" alt="Screenshot 2024-05-04 at 6 04 30 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/ab36d851-9e40-4a34-9303-c0970d64d7d9">
+
+5. Profile
+<img width="1440" alt="Screenshot 2024-05-04 at 6 04 55 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/f50f678f-56bd-4967-bf28-c5ec7f452ab4">
+
+6. Dev Team
+<img width="1440" alt="Screenshot 2024-05-04 at 6 05 15 PM" src="https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe/assets/167456961/744f67ab-fe50-4cfb-a83b-f9c41665afec">
+
+
 Developed by - **Team AI Bytes** from Capgemini Pune, INDIA.
