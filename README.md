@@ -14,4 +14,29 @@ In the financial industry, numerous credit cards offer various plans and rewards
 - Explore potential integrations with emerging technologies like smart wearables or AR/VR interfaces.
 - Implement a feedback mechanism for users to provide input on recommendations and app functionality, facilitating continuous improvement.
 
+# How to build and run the SmartSwipe.ai Django Web App ?
+
+### GitHub and Local Environment
+1. Clone the repo from GitHub
+`git clone https://github.com/github-cloudlabsuser-771/AI-Bytes-Smart-Swipe.git`
+2. Setup your Azure API Secrets in OS environment variables
+`OPENAI_API_KEY` and `SEARCH_KEY`
+
+### Development Environment (`PyCharm` OR `VS Code`)
+1. Go to the repo directory path and setup `venv`
+`python -m venv venv`
+2. Activate the `venv` on terminal
+`source venv/bin/activate`
+3. Install all required dependencies for project
+`pip install -r requirements.txt`
+4. Do the migration to update Django database schema
+`python manage.py makemigrations`
+5. Confirm the migration
+`python manage.py migrate`
+6. Create superuser for Admin access
+`python manage.py createsuperuser`
+7. Run the project on localhost
+`python manage.py runserver`                            // This will run on http://127.0.0.1:8000/
+
+
 Developed by - **Team AI Bytes** from Capgemini Pune, INDIA.
