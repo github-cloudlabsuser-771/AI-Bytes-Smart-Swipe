@@ -14,7 +14,7 @@ In the financial industry, numerous credit cards offer various plans and rewards
 - Explore potential integrations with emerging technologies like smart wearables or AR/VR interfaces.
 - Implement a feedback mechanism for users to provide input on recommendations and app functionality, facilitating continuous improvement.
 
-# How to build and run the SmartSwipe.ai Django Web App ?
+## How to build and run the SmartSwipe.ai Django WebApp?
 
 ### GitHub and Local Environment
 1. Clone the repo from GitHub
