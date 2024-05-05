@@ -73,6 +73,6 @@ and goals.
    <img width="1440" alt="profile.png" src="screens/profile.png">
 
 6. Dev Team
-   <img width="1440" alt="register.png" src="screens/register.png">
+   <img width="1440" alt="dev_team.png" src="screens/dev_team.png">
 
 Developed by - **Team AI Bytes** from Capgemini Pune, INDIA.
